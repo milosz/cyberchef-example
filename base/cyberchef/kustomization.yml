@@ -1,0 +1,10 @@
+---
+namespace: cyberchef
+
+commonLabels:
+  app: cyberchef
+
+resources:
+  - namespace.yml
+  - deployment.yml
+  - service.yml

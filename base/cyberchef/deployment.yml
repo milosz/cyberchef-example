@@ -1,0 +1,15 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cyberchef
+spec:
+  template:
+    spec:
+      containers:
+      - name: cyberchef
+        image: mpepping/cyberchef:latest
+        ports:
+        - name: http
+          protocol: TCP
+          containerPort: 8000
